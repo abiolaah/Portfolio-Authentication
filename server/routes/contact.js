@@ -16,7 +16,7 @@ function requireAuth(req, res, next)
 let Contact = require('../models/contact');
 let contactController = require('../controllers/contact');
 //GET ROUTE for the book list page -READ OPERATION
-router.get('/', contactController.displayContactList);
+router.get('/', requireAuth,contactController.displayContactList);
 
 /*GET Route for displaying the Edit page - UPDATE operation*/
 
