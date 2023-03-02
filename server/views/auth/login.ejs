@@ -1,0 +1,38 @@
+<%-include ../partials/header.ejs%>
+<%-include ../partials/main_nav.ejs%>
+<main class="form-signin w-100 m-auto">
+  <!--message area-->
+  <%if(messages.length>0){%>
+    <div class="alert alert-danger">
+        <%=messages%>
+        </div>
+        <%}%>
+    <form method="POST" autocomplete="off">
+      <img class="mb-4" src="../assets/images/Professional Colored Logo.jpg" alt="" width="150" height="100">
+      <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+  
+      <fieldset class="form-group">
+        <label for="username">username:</label>
+        <input type="text" class="form-control"
+        name="username"
+        placeholder = "Enter username"
+        id="username" required autofocus>
+        </fieldset>
+
+      <fieldset class="form-group">
+       <label for="password">password:</label>
+       <input type="password" class="form-control"
+       name="password"
+       placeholder = "Enter password"
+       id="password" required>
+       <a href="/register">Register Here</a>
+      </fieldset>
+  
+      <fieldset class="form-group text-right">
+        <input type="submit" class="btn btn-success" value="Login">
+        <a href="/"><input type="button" class="btn btn-warning" value="cancel"></a>
+        </fieldset>
+    </form>
+  </main>
+<%-include ../partials/bottom_nav.ejs%>
+<%-include ../partials/footer.ejs%>

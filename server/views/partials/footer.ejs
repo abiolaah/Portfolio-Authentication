@@ -1,0 +1,18 @@
+<!---JAVASCRIPT-->
+<script src="/jquery/dist/jquery.min.js"></script>
+    <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/scripts/app.js"></script>
+    <!-----Script to accept inputs and save inputs and re route user to home page for the submit button in Contact page----->
+    <script>
+        function myFunction() {
+          var inputFirstName = document.getElementById('first').value;
+          var inputLastName = document.getElementById('last').value;
+          var inputEmail = document.getElementById('email').value ;
+          var inputMessage = document.getElementById('message').value;
+          console.log(inputFirstName,inputLastName,inputEmail,inputMessage);       
+          window.location.href='/';
+        }
+      </script>
+    <link rel='stylesheet' href='/content/app.css' />
+</body>
+</html>

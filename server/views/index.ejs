@@ -1,0 +1,94 @@
+<%-include partials/header.ejs%>
+<%-include partials/main_nav.ejs%>
+  <!--Main Nav Navigation-->
+  
+  <main class="container">
+    <!--<div class="jumbotron"></div>-->
+      <!--<h1 class="display-4"><%= title %> page</h1>-->
+      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <svg class="bd-placeholder-img" width="100%" height="100%" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <defs>
+                <clipPath id="rectView">
+                  <rect width="100%" height="100%" fill="#777"/>
+                </clipPath>
+              </defs>
+              <image
+              width="100%"
+              height="100%"
+                href="/assets/images/Slide.png"
+                clip-path="url(#rectView"
+                />
+            </svg>
+            <div class="container">
+              <div class="carousel-caption text-start">
+                <h1>WELCOME TO MY PORTFOLIO.</h1>
+                <p>Hello 👋, I'm Victoria.</p>
+                  <p>A passionate Software engineer 👩‍💻 looking to develop and deploy solution driven
+                  software.</p>
+                <p><a class="btn btn-lg btn-primary" href="/about">About me</a>
+                  <a class="btn btn-lg btn-primary" href="/projects">Projects</a>
+                  <a class="btn btn-lg btn-primary" href="/services">Services</a>
+                  <a class="btn btn-lg btn-primary" href="/contact">Contact Me</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="featurette-divider">
+    
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading fw-normal lh-1">Mission Statement.</h2>
+          <p class="lead">Solution driven software that change the world.</p>
+        </div>
+        <div class="col-md-5">
+          <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500">
+            <title>Placeholder</title>
+            <defs>
+              <clipPath id="rectView">
+                <rect width="100%" height="100%" fill="#eee"/>
+              </clipPath>
+            </defs>
+            <image
+            width="100%"
+            height="100%"
+              href="/assets/images/MISSION.png"
+              clip-path="url(#rectView"
+              />
+          </svg>
+        </div>
+      </div>
+    
+      <hr class="featurette-divider">
+    
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading fw-normal lh-1">CORE VALUES </h2>
+          <p class="lead">Initiative <br>Commitment <br>Excellence</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500">
+            <title>Placeholder</title>
+            <defs>
+              <clipPath id="rectView">
+                <rect width="100%" height="100%" fill="#eee"/>
+              </clipPath>
+            </defs>
+            <image
+            width="100%"
+            height="100%"
+              href="/assets/images/Core.png"
+              clip-path="url(#rectView"
+              />
+          </svg>
+        </div>
+      </div>
+    
+  </main>
+  
+
+    <%-include partials/bottom_nav.ejs%>
+    <%-include partials/footer.ejs%>
