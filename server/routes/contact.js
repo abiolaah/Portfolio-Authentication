@@ -20,7 +20,7 @@ router.get('/', requireAuth,contactController.displayContactList);
 
 /*GET Route for displaying the Edit page - UPDATE operation*/
 
-router.get('/update/:id', requireAuth,contactController.displayUpdatePage);
+router.get('/update/:id', contactController.displayUpdatePage);
 
 /*POST Route for processing the Edit page - UPDATE Operation*/
 router.post('/update/:id', requireAuth,contactController.processUpdatePage);
