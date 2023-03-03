@@ -16,11 +16,11 @@ function requireAuth(req, res, next)
 let Contact = require('../models/contact');
 let contactController = require('../controllers/contact');
 //GET ROUTE for the book list page -READ OPERATION
-router.get('/', requireAuth,contactController.displayContactList);
+router.get('/',contactController.displayContactList);
 
 /*GET Route for displaying the Edit page - UPDATE operation*/
 
-router.get('/update/:id', contactController.displayUpdatePage);
+router.get('/update/:id', requireAuth,contactController.displayUpdatePage);
 
 /*POST Route for processing the Edit page - UPDATE Operation*/
 router.post('/update/:id', requireAuth,contactController.processUpdatePage);
